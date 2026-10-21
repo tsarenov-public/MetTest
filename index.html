@@ -185,7 +185,8 @@ body{font-family:'Rubik',system-ui,-apple-system,'Segoe UI',sans-serif;color:var
   .hero{padding:24px 20px 40px}
   .hero h1{font-size:23px}
   .qcard{padding:18px}
-  .qnav .btn{flex:1 1 100%}
+  .qnav{flex-direction:column-reverse}
+  .qnav .btn{width:100%}
 }
 </style>
 </head>
@@ -374,7 +375,7 @@ function renderHome(){
   '<div class="hero">'+
     '<div class="hero-row">'+
       '<div class="logo"><svg viewBox="0 0 24 24"><path d="M9.5 3h5a1 1 0 0 1 1 1v4.5H20a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-4.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4.5H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h4.5V4a1 1 0 0 1 1-1Z" fill="#fff"/></svg></div>'+
-      '<div><h1>Цитология · Тестовый контроль</h1>'+
+      '<div><h1>Цитология · Тест</h1>'+
       '<p class="sub">'+' </p></div>'+
     '</div>'+
     '<div class="hstats">'+
@@ -396,7 +397,7 @@ function renderHome(){
     '<div class="rrow"><span class="rchip">Осталось нерешённых: '+randomLeft+' из '+QUESTIONS.length+'</span>'+
     '<button class="btn light big" onclick="startRandom()">Начать случайный тест →</button></div></div>'+
   '</div>'+
-  '<div class="foot">Цитология · '+QUESTIONS.length+' вопросов · тренажёр для подготовки к экзамену<br>'+
+  '<div class="foot"><br>'+
   '<a onclick="resetProgress()">Сбросить прогресс</a></div>'+
   '</div>';
   window.scrollTo(0,0);
