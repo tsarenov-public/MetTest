@@ -375,7 +375,7 @@ function renderHome(){
     '<div class="hero-row">'+
       '<div class="logo"><svg viewBox="0 0 24 24"><path d="M9.5 3h5a1 1 0 0 1 1 1v4.5H20a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-4.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4.5H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h4.5V4a1 1 0 0 1 1-1Z" fill="#fff"/></svg></div>'+
       '<div><h1>Цитология · Тестовый контроль</h1>'+
-      '<p class="sub">Интерактивные тесты по клеточной биологии: '+QUESTIONS.length+' вопроса.</p></div>'+
+      '<p class="sub">'+' </p></div>'+
     '</div>'+
     '<div class="hstats">'+
       '<span class="hchip">🧬 '+QUESTIONS.length+' вопроса</span>'+
@@ -392,7 +392,7 @@ function renderHome(){
   '<div class="section">'+
     '<div class="sec-head"><div class="bar"></div><h2>Случайный режим</h2></div>'+
     '<div class="rcard"><h3>🎲 Случайный тест</h3>'+
-    '<p>Система выбирает 20 случайных вопросов из всей базы. Вопросы, на которые вы уже ответили в этом режиме, не повторяются. Когда нерешённых останется меньше 20, к ним добавятся случайные из уже решённых, а после этого цикл начнётся заново.</p>'+
+    '<p>Система выбирает 20 случайных вопросов из всей базы. Вопросы, на которые вы уже ответили в этом режиме, не повторяются. </p>'+
     '<div class="rrow"><span class="rchip">Осталось нерешённых: '+randomLeft+' из '+QUESTIONS.length+'</span>'+
     '<button class="btn light big" onclick="startRandom()">Начать случайный тест →</button></div></div>'+
   '</div>'+
